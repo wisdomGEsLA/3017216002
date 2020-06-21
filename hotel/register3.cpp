@@ -55,7 +55,7 @@ void Register3::on_pushButton_4_clicked()
 
     int resultage = isnum(age);
     int resulttelephone = isnum(telephone);
-    qDebug()<<resultage<<'ccccc'<<resulttelephone;
+
     qDebug()<<gender;
 
     if(resultage != 0||resulttelephone != 0)

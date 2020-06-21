@@ -43,10 +43,10 @@ void appoinment1::show_information()
 
     QString sql = tr("select m.type,m.rental,m.area,m.status,m.reservation_times,m.room_id  from room as m "
                      "where m.status = 0 or (m.status != 0 "
-                     "and m.room_id = (select r1.room_id from reservation as r1 where ('%1'<= r1.checkin_time or '%2' >= r1.checkout_time) "
+                     "and m.room_id = ANY(select r1.room_id from reservation as r1 where ('%1'<= r1.checkin_time or '%2' >= r1.checkout_time) "
                      "and r1.room_id not in (select r2.room_id from reservation as r2 where ('%3'<=r2.checkout_time and '%4' >= r2.checkin_time )"
                      "or ('%5' >= r2.checkin_time and '%6' <= r2.checkout_time)"
-                     "or ('%7' <= r2.checkin_time and '%8' >= r2.checkout_time))))").arg(out_time).arg(in_time).arg(in_time).arg(in_time).arg(out_time).arg(out_time).arg（in_time）.arg(out_time);
+                     "or ('%7' <= r2.checkin_time and '%8' >= r2.checkout_time))))").arg(out_time).arg(in_time).arg(in_time).arg(in_time).arg(out_time).arg(out_time).arg(in_time).arg(out_time);
     model->setQuery(sql);
     model->setHeaderData(5,Qt::Horizontal,tr("房间号"));
     model->setHeaderData(0,Qt::Horizontal,"房间类型");

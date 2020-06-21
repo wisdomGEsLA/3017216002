@@ -1,4 +1,4 @@
-#include "browse.h"
+﻿#include "browse.h"
 #include "ui_browse.h"
 #include<QApplication>
 #include<QSqlDatabase>
@@ -31,9 +31,6 @@ void Browse::on_pushButton_clicked()
 }void Browse::on_pushButton_2_clicked()
 {
     browse2.show();
-}void Browse::on_pushButton_3_clicked()
-{
-    browse3.show();
 }void Browse::on_pushButton_4_clicked()
 {
     browse4.show();

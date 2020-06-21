@@ -1,4 +1,4 @@
-#ifndef BROWSE_H
+﻿#ifndef BROWSE_H
 #define BROWSE_H
 
 #include <QMainWindow>
@@ -22,13 +22,13 @@ public:
 private slots:
          void on_pushButton_clicked();
          void on_pushButton_2_clicked();
-         void on_pushButton_3_clicked();
+         //void on_pushButton_3_clicked();
          void on_pushButton_4_clicked();
 private:
     Ui::Browse *ui;
     Browse1 browse1;
     Browse2 browse2;
-    Browse3 browse3;
+    //Browse3 browse3;
     Browse4 browse4;
 };
 

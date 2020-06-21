@@ -1,4 +1,4 @@
-#ifndef REGISTER_H
+﻿#ifndef REGISTER_H
 #define REGISTER_H
 
 #include <QMainWindow>
@@ -19,7 +19,7 @@ public:
 
 private slots:
     void on_pushButton_clicked();
-    void on_pushButton2_clicked();
+    //void on_pushButton2_clicked();
     //void on_pushButton3_clicked();//
 
 
